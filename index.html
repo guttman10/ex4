@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Omer Guttman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET" id="form1">
+        <div class="form-group">
+                <label>Full name <input type="text" class="form-control" name="fullName" value=""></label><br>
+                <label>Password <input type="password" class="form-control" name="pass" value=""></label><br>
+                <label>Email address
+                <input id="mailer"type="email" class="form-control" name="mail" placeholder="Enter email">
+                </label>
+                <h6 class="form-text text-muted">We are planning to share this with everyone.</h6>
+        
+        <label>Website <input type="url" class="form-control"name="website" value=""><br>        
+        <label>Phone <input class="form-control" type="tel" name="phone" value=""><br>
+        <label>Temperature <input class="form-control" type="range" name="temper" value=""><br>
+        <label>Phone <input type="number" class="form-control"name="coffee" value=""><br>
+        <label>Adress <input type="text" class="form-control" name="adress" value=""></label><br>
+        <h3>Interests:</h3>
+            <label>Y:<input type="checkbox" class="form-check-input" name="interests[]" value="Y"></label> 
+            <label>M:<input type="checkbox" class="form-check-input" name="interests[]" value="M"></label>
+            <label>C:<input type="checkbox" class="form-check-input" name="interests[]" value="C"></label>
+            <label>A:<input type="checkbox" class="form-check-input" name="interests[]" value="A"></label>
+        <h3>Gender</h3>
+            <label>Male<input type ="radio" name="gender" value ="Male"></label>
+            <label>Female<input type ="radio" name="gender" value ="Female"></label><br>
+            <label>Age 
+                <select name="age" class="form-control">
+                    <option value="42">42</option>
+                    <option value="9001">9001</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </label><br>
+        </div>
+    </form >
+    <button type="submit" value="Submit" form="form1" >Submit!</button>
+</div>
+</body>
+</html>
