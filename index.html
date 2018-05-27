@@ -28,7 +28,8 @@
         <label>Phone <input class="form-control" type="tel" name="phone" value=""placeholder="Enter Your Phone"></label><br>
         <label>Temperature <input class="form-control" type="range" name="temper" value=""></label><br>
         <label>How much coffee do you drink? <input type="number" class="form-control"name="coffee" value=""placeholder="Enter Amount"></label><br>
-        <label>Address <input type="text" class="form-control" name="address" value=""placeholder="Enter Your Adress"></label><br>
+        <label>Address <input id="val" type="text" class="form-control" name="address" value=""placeholder="Enter Your Adress"></label><br>
+        <input type="button" value="Validate" onclick="myFunction()"></button>
         <h3>Interests:</h3>
             <label>Y:<input type="checkbox" class="form-check-input" name="interests[]" value="Y"></label> 
             <label>M:<input type="checkbox" class="form-check-input" name="interests[]" value="M"></label>
@@ -45,8 +46,9 @@
                 </select>
             </label><br>
         </div>
+        <button type="submit" value="Submit">Submit!</button>
+        <h4 id="err"></h4>
     </form >
-    <button type="submit" value="Submit" form="form1" >Submit!</button>
 </div>
 </body>
 </html>
